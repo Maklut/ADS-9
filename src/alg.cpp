@@ -42,9 +42,10 @@ void PMTree::buildTree(std::shared_ptr<TreeNode> node,
     }
 }
 
-void PMTree::getAllPermutationsRecursive(std::shared_ptr<TreeNode> node,
-                                         std::vector<char>& current,
-                                         std::vector<std::vector<char>>& result) {
+void PMTree::getAllPermutationsRecursive(
+    std::shared_ptr<TreeNode> node,
+    std::vector<char>& current,
+    std::vector<std::vector<char>>& result) {
     if (!node) return;
 
     if (node->value != '\0') {
