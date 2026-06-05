@@ -1,13 +1,8 @@
-cmake_minimum_required (VERSION 3.10.2)
-project (ADS-9)
+cmake_minimum_required(VERSION 3.10)
+project(PermutationTree)
 
 set(CMAKE_CXX_STANDARD 17)
-set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O3 -g")
-
-
-set(tool_dest "bin")
-set(lib_dest "lib")
-set(include_dest "include/")
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_subdirectory(src)
 add_subdirectory(test)
