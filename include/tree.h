@@ -25,6 +25,11 @@ class PMTree {
         return originalElements;
     }
 
+    // Дружественные функции
+    friend std::vector<std::vector<char>> getAllPerms(PMTree& tree);
+    friend std::vector<char> getPerm1(PMTree& tree, int num);
+    friend std::vector<char> getPerm2(PMTree& tree, int num);
+
  private:
     std::shared_ptr<TreeNode> root;
     std::vector<char> originalElements;
@@ -47,4 +52,4 @@ std::vector<std::vector<char>> getAllPerms(PMTree& tree);
 std::vector<char> getPerm1(PMTree& tree, int num);
 std::vector<char> getPerm2(PMTree& tree, int num);
 
-#endif  // INCLUDE_TREE_H_ 
+#endif  // INCLUDE_TREE_H_
