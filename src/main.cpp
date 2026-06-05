@@ -1,4 +1,5 @@
 // Copyright 2022 NNTU-CS
+#include "tree.h"
 #include <iostream>
 #include <fstream>
 #include <chrono>
@@ -6,7 +7,6 @@
 #include <vector>
 #include <string>
 #include <iomanip>
-#include "tree.h"
 
 std::vector<char> generateSymbols(int n) {
     std::vector<char> symbols;
