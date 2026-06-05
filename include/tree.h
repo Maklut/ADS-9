@@ -2,8 +2,8 @@
 #ifndef INCLUDE_TREE_H_
 #define INCLUDE_TREE_H_
 
-#include <vector>
 #include <memory>
+#include <vector>
 
 // Узел дерева
 struct TreeNode {
