@@ -1,9 +1,7 @@
 // Copyright 2025 NNTU-CS
-#include <gtest/gtest.h>
-#include <string>
-#include <vector>
-
 #include "tree.h"
+#include <gtest/gtest.h>
+#include <vector>
 
 TEST(ads9, test1) {
     std::vector<char> in = {'1', '2', '3'};
