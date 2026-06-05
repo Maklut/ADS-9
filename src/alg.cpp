@@ -1,7 +1,6 @@
 // Copyright 2022 NNTU-CS
 #include "tree.h"
 #include <algorithm>
-#include <memory>
 #include <vector>
 
 PMTree::PMTree(const std::vector<char>& elements)
@@ -39,13 +38,6 @@ void PMTree::buildTree(std::shared_ptr<TreeNode> node,
 
         buildTree(child, newRemaining);
     }
-}
-
-std::vector<std::vector<char>> getAllPerms(PMTree& tree) {
-    std::vector<std::vector<char>> result;
-    std::vector<char> current;
-    tree.getAllPermutationsRecursive(tree.root, current, result);
-    return result;
 }
 
 void PMTree::getAllPermutationsRecursive(std::shared_ptr<TreeNode> node,
@@ -122,6 +114,13 @@ int PMTree::countPermutationsInSubtree(std::shared_ptr<TreeNode> node,
         count += countPermutationsInSubtree(child, depth + 1, totalDepth);
     }
     return count;
+}
+
+std::vector<std::vector<char>> getAllPerms(PMTree& tree) {
+    std::vector<std::vector<char>> result;
+    std::vector<char> current;
+    tree.getAllPermutationsRecursive(tree.root, current, result);
+    return result;
 }
 
 std::vector<char> getPerm1(PMTree& tree, int num) {
