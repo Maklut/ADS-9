@@ -1,6 +1,5 @@
 // Copyright 2025 NNTU-CS
 #include "tree.h"
-
 #include <gtest/gtest.h>
 #include <vector>
 
