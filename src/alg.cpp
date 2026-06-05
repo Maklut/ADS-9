@@ -1,6 +1,5 @@
 // Copyright 2022 NNTU-CS
 #include "tree.h"
-
 #include <algorithm>
 #include <memory>
 #include <vector>
@@ -32,9 +31,10 @@ void PMTree::buildTree(std::shared_ptr<TreeNode> node,
     }
 }
 
-void PMTree::getAllPermutationsRecursive(std::shared_ptr<TreeNode> node,
-                                         std::vector<char>& current,
-                                         std::vector<std::vector<char>>& result) {
+void PMTree::getAllPermutationsRecursive(
+    std::shared_ptr<TreeNode> node,
+    std::vector<char>& current,
+    std::vector<std::vector<char>>& result) {
     if (!node) return;
     if (node->value != '\0') current.push_back(node->value);
     if (node->children.empty()) {
