@@ -1,8 +1,7 @@
 // Copyright 2022 NNTU-CS
+#include "tree.h"
 #include <iostream>
 #include <vector>
-
-#include "tree.h"
 
 void print(std::vector<char> v) {
     for (size_t i = 0; i < v.size(); i++) {
