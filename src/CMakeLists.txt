@@ -2,8 +2,7 @@ set(header_path "${CMAKE_CURRENT_SOURCE_DIR}/../include")
 set(header ${header_path}/tree.h)
 set(src alg.cpp)
 
-add_library(${PROJECT_NAME} SHARED
-    ${src})
+add_library(${PROJECT_NAME} SHARED ${src})
 
 target_include_directories(${PROJECT_NAME}
     PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../include)
@@ -11,8 +10,7 @@ target_include_directories(${PROJECT_NAME}
 add_executable(${PROJECT_NAME}.info main.cpp)
 target_include_directories(${PROJECT_NAME}.info
     PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/../include)
-target_link_libraries(${PROJECT_NAME}.info
-    ${PROJECT_NAME})
+target_link_libraries(${PROJECT_NAME}.info ${PROJECT_NAME})
 
 install(TARGETS ${PROJECT_NAME}
     LIBRARY DESTINATION lib
