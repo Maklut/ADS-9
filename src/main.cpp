@@ -31,8 +31,6 @@ int main() {
     std::cout << "Проверка getPerm2(2): ";
     print(getPerm2(tree, 2));
     
-    std::cout << "\n";
-    
     // Запускаем вычислительный эксперимент
     runExperiment();
     
