@@ -1,5 +1,6 @@
 // Copyright 2022 NNTU-CS
 #include "tree.h"
+#include <vector>
 
 int factorial(int n) {
     int result = 1;
